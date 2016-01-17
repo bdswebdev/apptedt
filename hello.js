@@ -15,6 +15,7 @@ var label = tabris.create("TextView", {
 
 button.on("select", function() {
   label.set("text", "Totally Rock!");
+  navigator.vibrate(1);
 });
 
 page.open();
